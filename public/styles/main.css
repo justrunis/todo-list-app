@@ -1,0 +1,55 @@
+:root{
+    --main-text-color: #00FF00;
+    --main-background-color: #001F3F;
+    --card-color: #007B8A;
+}
+
+body {
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+}
+
+.navbar-custom{
+    background-color: var(--card-color);
+}
+
+.navbar-custom h1{
+    color: var(--main-text-color);
+}
+
+.navbar-brand {
+    font-size: 3.5rem;
+}
+
+.card{
+    background-color: var(--card-color);
+    border-width: 5px;
+    border-color: black;
+    width: 500px;
+}
+
+.card-text{
+    font-size: 1.5rem;
+    color: var(--main-text-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: normal;
+    margin-right: 10px;
+}
+
+.form-inline-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-inline-flex .btn {
+    margin-left: 20px;
+}
+
+
+.modal-content > .modal-header >.modal-title{
+    color: black;
+}
