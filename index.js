@@ -20,7 +20,7 @@ app.post("/create", (req, res) => {
 
   if (postItem !== "") {
     posts.push(postItem);
-    res.render("index.ejs", { posts: posts });
+    res.redirect('/');
   } else {
     res.status(400).send('Invalid post item.');
   }
@@ -47,7 +47,7 @@ app.post("/remove", (req, res) =>{
 
   if (!isNaN(postIndex) && postIndex >= 0 && postIndex < posts.length) {
     posts.splice(postIndex, 1);
-    res.render("index.ejs", { posts: posts});
+    res.redirect('/');
   } else {
     res.status(400).send('Invalid post index.');
   }
